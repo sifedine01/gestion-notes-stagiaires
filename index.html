@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="all">
+      <h1>Ajouter des stagaires</h1>
+      <div class="form">
+        <input type="text" name="nom" id="nom" placeholder="Nom de stagaires">
+        <input type="number" name="cc1" id="cc1" min="0" max="20" placeholder="Note 1">
+        <input type="number" name="cc2" id="cc2" min="0" max="20" placeholder="Note 2">
+        <input type="number" name="cc3" id="cc3" min="0" max="20" placeholder="Note 3">
+        <input type="number" name="efm" id="efm" min="0" max="20" placeholder="EFM">
+        <button onclick="ajouter()">Ajouter</button>
+      </div>
+
+        <div class="table">
+            <table id="tableau" border="1" cellspacing="0" cellpadding="5">
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Note 1</th>
+                <th>Note 2</th>
+                <th>Note 3</th>
+                <th>EFM</th>
+                <th>Moyenne</th>
+                <th>Validation</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+            </table>
+        </div>
+        <div id="infos">
+            
+        </div>
+        <button onclick="print()" class="print">imprimer la page</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
